@@ -1,0 +1,26 @@
+.feature {
+  min-width: 75vh;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .feature-description {
+    @apply --width-standard;
+  }
+
+  & .feature-phone {
+    @media(--viewport-medium) {
+      transform: rotateZ(15deg) scale(0.8);
+      animation: videoin 1s;
+      animation-play-state: paused;
+    }
+  }
+
+  &:nth-of-type(2n) {
+    @media(--viewport-medium) {
+
+    }  
+  }
+}

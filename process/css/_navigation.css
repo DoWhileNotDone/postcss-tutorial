@@ -1,0 +1,20 @@
+.nav {
+  @apply --width-standard;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media (--viewport-small) {
+    flex-direction: row;
+  }
+
+  & .branding {
+    color: color(var(--orange) saturation( + 20%))
+    margin-left: auto;
+    width: 80px;
+
+    @media (--viewport-small) {
+      width: 60px;
+    }  
+  }
+}

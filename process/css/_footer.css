@@ -1,0 +1,22 @@
+.footer {
+  background: linear-gradient(var(--darkblue), var(--blue));
+  padding: 40px 0;
+
+  & .footer-elements {
+    @apply --width-standard;
+
+    & .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & .footer-logo {
+        width: 70px;
+      }
+
+    }
+
+  }
+
+
+}

@@ -1,0 +1,43 @@
+.header {
+  color: var(--color-main);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 100vh;
+
+  
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8)), url(../images/hero/appwoman.jpg) no-repeat center bottom;  
+  background-size: cover;
+
+  & .header-info {
+    width: 100%;
+    text-align: center;
+
+    & .header-info-headline {
+      font-size: calc(var(--font-size-base) * 2.5)
+      @apply: --width-standard;
+    }
+
+    & .header-info-subheadline {
+      font-size: calc(var(--font-size-base) * 1.5)
+      @apply: --width-standard;
+    }
+
+    & .header-info-text {
+      @apply: --width-standard;
+      display: none;
+
+      @media(--viewport-small) {
+        display: block;
+      }
+
+      & a:any-link {
+        font-size: calc(var(--font-size-base) * 1.7)
+      }
+  
+    }
+
+  }
+
+}
